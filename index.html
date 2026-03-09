@@ -1,45 +1,166 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Privacy Policy – TideWatcher by Whitaker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy for TideWatcher</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px 56px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background: #f8fafc;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 32px 28px;
+      box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      color: #0f172a;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      margin-top: 1.25rem;
+      font-size: 1rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    .updated {
+      color: #475569;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy for TideWatcher</h1>
-  <p><em>Last updated: July 10, 2025</em></p>
+  <main>
+    <h1>Privacy Policy for TideWatcher</h1>
+    <p class="updated">Last updated: July 10, 2025</p>
 
-  <h2>1. Introduction</h2>
-  <p>Welcome to TideWatcher. We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your data when you use our app.</p>
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to TideWatcher. We value your privacy and are committed to protecting your personal
+      information. This Privacy Policy explains how we collect, use, disclose, and safeguard your
+      data when you use our app.
+    </p>
 
-  <h2>2. Information We Collect</h2>
-  <h3>Location Data</h3>
-  <p>We request “When In Use” location access solely to center the map on your current position and show nearby tide stations. Location data is used in-app and not stored on our servers.</p>
-  <h3>Tide & Station Data</h3>
-  <p>We fetch station lists and tide predictions from the NOAA Tides & Currents API. This data is cached temporarily in-app for performance.</p>
-  <h3>Favorites</h3>
-  <p>We store your favorite station IDs locally in your device’s UserDefaults so they persist across launches. We do not share or sell this data.</p>
+    <h2>2. Information We Collect</h2>
 
-  <h2>3. How We Use Your Information</h2>
-  <ul>
-    <li>To display your current location on the map.</li>
-    <li>To fetch and render tide predictions and charts.</li>
-    <li>To save and load your favorites locally.</li>
-    <li>Optionally, to collect anonymous analytics and crash reports if you opt in.</li>
-  </ul>
+    <h3>Location Data</h3>
+    <p>
+      We request "When In Use" location access solely to center the map on your current position
+      and show nearby tide stations. Location data is used in-app and is not stored on our servers.
+    </p>
 
-  <h2>4. Data Sharing & Securitys</h2>
-  <p>We do not sell or rent your personal information. All API calls use HTTPS. Favorites and cached data remain on your device. We may disclose data to comply with legal obligations.</p>
+    <h3>Tide, Weather, and Station Data</h3>
+    <p>
+      We fetch station lists, tide predictions, weather, and buoy information from public sources
+      such as NOAA, NWS, and NDBC. This data may be cached temporarily in-app for performance.
+    </p>
 
-  <h2>5. Your Choices</h2>
-  <p>You can revoke location access in iOS Settings → Privacy → Location Services → TideWatcher. Clearing app data will remove your favorites. Uninstalling removes all locally stored data.</p>
+    <h3>Favorites and Notification Preferences</h3>
+    <p>
+      If you use TideWatcher without an account, your favorite station IDs and local notification
+      preferences are stored on your device so they persist across launches. If you sign in, those
+      favorites and preferences are also synced to your account in the cloud.
+    </p>
 
-  <h2>6. Children’s Privacy</h2>
-  <p>TideWatcher is not directed at children under 13, and we do not knowingly collect data from them.</p>
+    <h3>Account Information</h3>
+    <p>
+      If you create an account, we store your first name, last name, email address, favorites,
+      notification preferences, and display preferences such as whether Weather &amp; Moon and
+      Satellite View are enabled. Authentication and cloud storage are provided through Firebase.
+    </p>
 
-  <h2>7. Changes to This Policy</h2>
-  <p>We may update this policy. The “Last updated” date at the top will reflect changes. Continued app use constitutes acceptance.</p>
+    <h3>App Usage Logs</h3>
+    <p>
+      If you are signed in, we record app-open activity associated with your account, including
+      timestamps, date, day, time zone, and a running app open count. We use this data to
+      understand account activity and support app operations.
+    </p>
 
-  <h2>8. Contact Us</h2>
-  <p>For questions, email: <a href="mailto:support@tidewatchapp.com">support@tidewatchapp.com</a>.</p>
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>To display your current location on the map.</li>
+      <li>To fetch and render tide predictions, charts, weather, and buoy data.</li>
+      <li>To save and sync your favorite stations and notification preferences.</li>
+      <li>To keep your display settings consistent across devices when signed in.</li>
+      <li>To maintain account-related usage history such as app-open logs.</li>
+    </ul>
+
+    <h2>4. Data Sharing &amp; Security</h2>
+    <p>
+      We do not sell or rent your personal information. We use Firebase as our cloud service
+      provider for authentication and account data storage. External data requests to public tide
+      and weather services use HTTPS where available. Locally cached data remains on your device
+      unless you choose to sign in and sync it to your account. We may disclose information if
+      required to comply with legal obligations.
+    </p>
+
+    <h2>5. Your Choices</h2>
+    <ul>
+      <li>
+        You can revoke location access in iOS Settings &rarr; Privacy &amp; Security &rarr;
+        Location Services &rarr; TideWatcher.
+      </li>
+      <li>You can manage or disable notifications in iOS Settings.</li>
+      <li>You can sign out at any time from the Settings screen in the app.</li>
+      <li>
+        You can delete your account in-app from Settings. Deleting your account removes your
+        cloud-synced profile data, favorites, preferences, and app-open history from our Firebase
+        records.
+      </li>
+      <li>
+        If you are not signed in, uninstalling the app removes locally stored app data from your
+        device.
+      </li>
+    </ul>
+
+    <h2>6. Children’s Privacy</h2>
+    <p>
+      TideWatcher is not directed at children under 13, and we do not knowingly collect personal
+      information from children under 13.
+    </p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. The "Last updated" date at the top of
+      this page will reflect changes. Continued use of the app after changes become effective
+      constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      For questions, email:
+      <a href="mailto:support@tidewatchapp.com">support@tidewatchapp.com</a>.
+    </p>
+  </main>
 </body>
 </html>
+```
